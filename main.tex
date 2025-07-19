@@ -1,0 +1,147 @@
+%-------------------------
+% Resume in Latex
+% Author : Aditya Saini
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multirow}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemNH}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,label={}]}
+\newcommand{\resumeSubHeadingListStartBullets}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+\begin{document}
+
+\begin{tabular*}{\textwidth}{L@{\extracolsep{\fill}}C@{\extracolsep{\fill}}R}
+  \href{mailto:saini91@purdue.edu}{saini91@purdue.edu} &
+  \multirow{2}{*}{\Huge \textbf{Aditya Saini}} &
+  \href{https://sunnyv.surge.sh}{sunnyv.surge.sh} \\
+  (908) 912-6974 & & US Citizen
+\end{tabular*}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Purdue University}{West Lafayette, IN}
+      {B.S. in Computer Science and Mathematics}{Expected May 2029}
+      \resumeItemListStart
+        \resumeItem{Concentration}{Machine Intelligence}
+        \resumeItem{Coursework}{Data Structures \& Algorithms, Systems Programming, Linear Algebra, Multivariable Calculus, Physics (Mechanics \& E\&M), Object-Oriented Programming, Discrete Math, Probability}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Experience \& Projects}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Natural Language Shell (NLSH)}{Remote}
+      {Creator \& Software Engineer}{July 2025 -- Present}
+      \resumeItemListStart
+        \resumeItemNH{Designed and implemented a lightweight command-line shell written in C that executes commands based on natural language input.}
+        \resumeItemNH{Developed custom tokenization, basic intent parsing, and bash command mapping for user-friendly interaction.}
+        \resumeItemNH{Built setup tooling with `setup.sh` for cross-platform installation; documented architecture on GitHub.}
+        \resumeItemNH{Exploring futher integration with DeepSeek R1 / OpenAI's API  to support more complex queries.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Personal Website/Portfolio}{Remote}
+      {Developer \& Designer}{June 2025 -- Present}
+      \resumeItemListStart
+        \resumeItemNH{Designed and developed a personal portfolio website using HTML, CSS, and JavaScript to showcase projects in systems programming, robotics, and music.}
+        \resumeItemNH{Implemented responsive design principles for cross-device compatibility and optimized performance.}
+        \resumeItemNH{Deployed the site using Surge for fast, static hosting with a custom domain.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {FIRST Robotics Competition Team 2554}{Edison, NJ}
+      {Build President \& Programming Captain}{Sep 2021 -- June 2025}
+      \resumeItemListStart
+        \resumeItemNH{Mentored new programmers and coordinated between mechanical, electrical, and software subteams.}
+        \resumeItemNH{Led software development for autonomous systems, creating the highest scoring routine at District Championships.}
+        \resumeItemNH{Acted as a communication bridge between programming and build teams, translating software requirements into actionable hardware adjustments.}
+      \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+
+\section{Selected Technial Projects}
+  \resumeSubHeadingListStartBullets
+    \resumeSubItem{HawkVision (FRC 2023)}
+      {A computer vision pipeline using OpenCV in Java to detect and differentiate scoring objects. Integrated into autonomous routines with PID control.}
+    \resumeSubItem{Arduino Synthesizer (Physics Project)}
+      {Built a simple synthesizer using Arduino to demonstrate waveform generation and audio signal manipulation for AP Physics.}
+  \resumeSubHeadingListEnd
+
+\section{Involvement}
+  \resumeSubHeadingListStartBullets
+    \resumeSubItem{Hindi USA Volunteer Teacher}
+      {Taught conversational Hindi and grammar through interactive games and activities; fostered a supportive learning environment.}
+    \resumeSubItem{Kumon Math Instructor}
+      {Taught advanced math (pre-calc to calc 2) to K-12 students, focused on building logical reasoning and strong foundations.}
+  \resumeSubHeadingListEnd
+
+\section{Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Languages}
+      {C, C++, Python, Java, JavaScript, Bash, HTML/CSS, LaTeX}
+    \resumeSubItem{Technologies}
+      {Git, OpenCV, React, Node.js, Flask, SQL, Arduino, Linux, VS Code}
+    \resumeSubItem{AI Tools}
+      {Claude, Cursor, Copilot, Gemini CLI, ChatGPT}
+  \resumeSubHeadingListEnd
+
+\end{document}
