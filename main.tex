@@ -1,8 +1,3 @@
-%-------------------------
-% Resume in LaTeX
-% Author : Aditya Saini
-%------------------------
-
 \documentclass[letterpaper,11pt]{article}
 
 \usepackage{latexsym}
@@ -12,151 +7,202 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[pdftex]{hyperref}
-\hypersetup{
-    hidelinks
-}
+\usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
-\usepackage{multirow}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
 
 \pagestyle{fancy}
-\fancyhf{}
+\fancyhf{} % clear all header and footer fields
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-\addtolength{\oddsidemargin}{-0.375in}
-\addtolength{\evensidemargin}{-0.375in}
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
 \addtolength{\topmargin}{-.5in}
 \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
+
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
 
+% Sections formatting
 \titleformat{\section}{
-  \vspace{-2pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-3pt}]
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-\newcommand{\resumeItem}[2]{
-  \item\small{
-    \textbf{#1}{: #2}
-  }
-}
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
 
-\newcommand{\resumeItemNH}[1]{
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
   \item\small{
-    {#1}
+    {#1 \vspace{-2pt}}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{2pt}\item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{2pt}
+    \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}}
-\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,label={}]}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
-\newcommand{\resumeItemListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \begin{document}
 
-% Header
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
 \begin{center}
     \textbf{\Huge \scshape Aditya Saini} \\ \vspace{1pt}
-    \small +1 908-912-6974 $|$ \href{mailto:saini91@purdue.edu}{\underline{saini91@purdue.edu}} $|$ 
+    \small 908-912-6974 $|$ \href{mailto:saini91@purdue.edu}{\underline{saini91@purdue.edu}} $|$ 
     \href{https://linkedin.com/in/adityavsaini}{\underline{linkedin.com/in/adityavsaini}} $|$
     \href{https://github.com/Saini-01}{\underline{github.com/Saini-01}} $|$
-    \href{https://sunnyv.surge.sh/}{\underline{sunnyv.surge.sh}}
+    \href{https://sunnyv.surge.sh}
+    {\underline{sunnyv.surge.sh}}
 \end{center}
 
-% Education
+
+%-----------EDUCATION-----------
 \section{Education}
-\resumeSubHeadingListStart
-  \resumeSubheading
-    {Purdue University}{West Lafayette, IN}
-    {B.S. in Computer Science}{May 2028}
-    \resumeItemListStart
-      \resumeItem{Concentrations}{Systems Programming}
-      \resumeItem{Coursework}{Data Structures \& Algorithms, Object Oriented Programming, Linear Algebra, Multivariable Calculus, Physics (Mechanics \& E\&M), Discrete Math, Programming in C}
-    \resumeItemListEnd
-\resumeSubHeadingListEnd
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Purdue University}{West Lafayette, IN}
+      {B.S. Computer Science (Systems Programming)}{Expected Graduation: May 2028 (Expected)}
+    \item{\small Relevant Coursework: Data Structures \& Algorithms, Linear Algebra, Discrete Mathematics, Computer Architecture, Systems Programming, Programming in C, Operating Systems, Compilers, Object-Oriented Programming}
+  \resumeSubHeadingListEnd
 
-% Experience
+
+%-----------EXPERIENCE-----------
 \section{Experience}
-\resumeSubHeadingListStart
-
-  \resumeSubheading
-  {Purdue University Security Research (PURSEC)}{West Lafayette, IN}
-  {Undergraduate Research Assistant}{Janurary 2026 -- Present}
-  \resumeItemListStart
-    \resumeItemNH{Researching robotic security and jailbreaking methodology for security and alignment for robots powered by MLLMs and VLMs.}
-    \resumeItemNH{Used tools such as AWS EC2, Google Colab, and EmbodiedBench to simulate and test MLLM control of robots.}
-  \resumeItemListEnd
-
-  \resumeSubheading
-  {Purdue Electric Racing}{West Lafayette, IN}
-  {Firmware Engineer}{September 2025 -- Present}
-  \resumeItemListStart
-    \resumeItemNH{Developed embedded firmware in C for STM32F4 microcontroller supporting electric vehicle subsystems.}
-    \resumeItemNH{Implemented HAL layers for sensors using I2C and SPI communication for various sensors}
-  \resumeItemListEnd
-
-  \resumeSubheading
-  {Kumon North America}{Edison, NJ}
-  {Advanced Mathematics Teacher}{June 2023 -- July 2025}
-  \resumeItemListStart
-    \resumeItemNH{Taught advanced mathematics (Pre-Algebra through Calculus II) to students aged 11–18, improving problem-solving strategies and test performance.}
-  \resumeItemListEnd
-
-\resumeSubHeadingListEnd
-
-
-% Projects
-\section{Projects}
-\resumeSubHeadingListStart
-
-  \resumeSubheading
-    {Natural Language Shell (NLSH)}{Remote}
-    {Creator \& Software Engineer}{July 2025 -- Present}
-    \resumeItemListStart
-      \resumeItemNH{Created a lightweight command-line shell in C supporting natural language commands with tokenizer, intent parsing, and bash mapping; integrated OpenAI API for complex commands/queries through OpenRouter.}
-    \resumeItemListEnd
+  \resumeSubHeadingListStart
 
     \resumeSubheading
-    {Custom Controller}{Edison, NJ}
-    {Creator \& Programmer}{October 2024 -- April 2025}
-    \resumeItemListStart
-      \resumeItemNH{Engineered a custom gamepad with PSoC, writing low-level C firmware for input polling and USB communication.}
-      \resumeItemNH{Integrated with robotics driver station, improving operator clarity and reliability in competition.}
+      {Robotic Safety Research Assistant}{January 2026 -- Present}
+      {PurSec, Purdue Computer Science}{West Lafayette, IN}
+      \resumeItemListStart
+        \resumeItem{Developed robotic simulations using AI2THOR to find efficient jailbreaking methods for MLLM controlled robots}
+        \resumeItem{Used AWS EC2 to run and gather results on experiments through EmbodiedBench in a headless enviornment}
+        \resumeItem{Used Claude Code and Cursor to generate real world enviornment JSON files to perform robotic tasks}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Embedded Engineer}{Sep. 2025 -- Present}
+      {Purdue Electric Racing}{West Lafayette, IN}
+      \resumeItemListStart
+        \resumeItem{Developed modular RTOS-based vehicle firmware in C, integrating drivers and performing in-circuit debugging}
+        \resumeItem{Implemented runtime telemetry and data acquisition to validate performance bottlenecks in production firmware}
+        \resumeItem{Designed I2C and SPI HALs for STM32 platforms, standardizing high-frequency sensor communication}
+        \resumeItem{Developed Nextion LCD UART drivers and optimized command encoding for reliable real-time dashboard updates}
+    \resumeItemListEnd{}
+
+    \resumeSubheading
+      {Controls Engineer}{Dec 2025 -- Present}
+      {Purdue Space Program}{West Lafayette, IN}
+      \resumeItemListStart
+        \resumeItem{Developed a flight dynamics simulation in MATLAB to model rigid body translational and rotational systems}
+        \resumeItem{Implemented and tuned a PID controller for closed-loop stabilization of an unstable nonlinear control system}
+        \resumeItem{Implemented embedded C drivers on ESP32 rocket test platform enabling real-time control and system validation}
+      \resumeItemListEnd
+    
+
+    \resumeSubheading
+      {Advanced Mathematics Teacher}{June 2023 -- July 2025}
+      {Kumon North America}{Edison, NJ}
+      \resumeItemListStart
+        \resumeItem{Developed tailored pedagogical strategies to explain complex mathematical concepts to a diverse student body, ensuring mastery of core principles for over 20+ concurrent students.}
+        \resumeItem{Managed high-volume academic data entry and performance tracking, utilizing center-specific software to generate progress reports and identify learning bottlenecks for student development.}
     \resumeItemListEnd
 
-      \resumeSubheading
-  {FIRST FRC Team 2554}{Edison, NJ}
-  {Build President \& Programming Captain}{September 2021 -- June 2025}
-  \resumeItemListStart
-   \resumeItemNH{Led the team to its best-ever season as Build President, earning three district awards through leadership and technical contributions, including programming Swerve Drive, tuning PID/FF loops, and writing code for various subsystems.}
-  \resumeItemListEnd
+  \resumeSubHeadingListEnd
 
-\resumeSubHeadingListEnd
 
-% Skills
-\section{Skills}
-\resumeSubHeadingListStart
-  \resumeSubItem{Languages}
-    {C, C++, Python, Java, JavaScript, Bash, HTML/CSS, LaTeX}
-  \resumeSubItem{Technologies}
-    {Git, Spring Boot, OpenCV, React, Node.js, Flask, SQL, Arduino, Linux, PyTorch, AWS, Google Colab}
-\resumeSubHeadingListEnd
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading{\textbf{Natural Language Shell} $|$ \emph{Spigot API, Java, Maven, TravisCI, Git}}{June 2025 -- January 2026}
+      \resumeItemListStart
+        \resumeItem{Created a lightweight command-line shell in C supporting natural language commands with tokenizer, intent parsing, and bash mapping; integrated OpenAI API for complex commands/queries through OpenRouter.}
+      \resumeItemListEnd
+      \resumeProjectHeading{\textbf{FRC Team 2554} $|$ \emph{Python, Flask, React, PostgreSQL, Docker}}{September 2021 -- August 2025}
+      \resumeItemListStart
+        \resumeItem{Led the team to its best-ever season as Build President, bringing us to District Championships after 18+ years.}
+        \resumeItem{Developed and led our team’s first instance of Swerve Drive, tuned PID/FF loops, and developed auto commands to increase accuracy by 66\% using custom vision pipelines to detect AprilTags for robot positioning.}
+        \resumeItem{Managed finances and administrative requirements for the team in conjunction with robot design requirements.}
+      \resumeItemListEnd
+      \resumeProjectHeading{\textbf{Tava} $|$ \emph{React, Expo, Firebase, Networking}}{November 2025}
+      \resumeItemListStart
+        \resumeItem{Built a social networking app for college founders with React and Expo, allowing builders and founders to connect on specific projects. Integrated a search bar integrating OpenAI API, as well as a "tinder" swipe feature.}
+        \resumeItem{Implemented custom Obsidian-style node graph UX to display connections with other users and founders.}
+        \resumeItem{Integrated Firebase real-time database and authentication for synchronous group updates.}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
 
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C, C++, Python, Java, SQL, JavaScript, HTML/CSS, R} \\
+     \textbf{Embedded}{: RTOS, STM32, ESP32, SPI, I2C, UART, CAN, TCP/IP, Arduino, Linux} \\
+     \textbf{Developer Tools}{: Git, Docker, Amazon Web Services, Claude Code, Cursor, Agent Orchestration} \\
+     \textbf{Libraries}{: pandas, NumPy, Matplotlib, React, Node.js, PyTorch, CUDA, OpenCV}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
 \end{document}
