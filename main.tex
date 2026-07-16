@@ -139,21 +139,13 @@
     \resumeItemListEnd{}
 
     \resumeSubheading
-      {Controls Engineer}{Dec 2025 -- Present}
-      {Purdue Space Program}{West Lafayette, IN}
-      \resumeItemListStart
-        \resumeItem{Developed a flight dynamics simulation in MATLAB to model rigid body translational and rotational systems}
-        \resumeItem{Implemented and tuned a PID controller for closed-loop stabilization of an unstable nonlinear control system}
-        \resumeItem{Implemented embedded C drivers on ESP32 rocket test platform enabling real-time control and system validation}
-    \resumeItemListEnd
-
-    \resumeSubheading
       {Robotic Safety Research Assistant}{January 2026 -- July 2026}
       {PurSec, Purdue Computer Science}{West Lafayette, IN}
       \resumeItemListStart
-        \resumeItem{Developed robotic simulations using AI2THOR to find efficient jailbreaking methods for MLLM controlled robots}
-        \resumeItem{Used AWS EC2 to run and gather results on experiments through EmbodiedBench in a headless environment}
-        \resumeItem{Used Claude Code and Cursor to generate real world environment JSON files to perform robotic tasks}
+        \resumeItem{Researched jailbreak vulnerabilities in MLLM-controlled home-assistant robots, uncovering multi-step physics attacks that chain individually-safe actions into unsafe outcomes to defeat existing safety systems}
+        \resumeItem{Engineered 10+ AI2-THOR multi-step physics attacks (chain-reaction, fire, and flooding hazards) that bypass state-of-the-art guardrails while every intermediate step passes inspection}
+        \resumeItem{Built a dual-brain safety baseline pairing RoboGuard (GPT-4o rules to Linear Temporal Logic compiled into Spot B\"uchi automata) with ASIMOV (GPT-4o Vision over frames + a Robot Constitution) to red-team its blind spots}
+        \resumeItem{Demonstrated attacks defeating both brains and ran reproducible evaluations via a Dockerized headless (Xvfb/FFmpeg) pipeline on AWS EC2 to quantify per-step and end-to-end failure rates}
       \resumeItemListEnd
 
     \resumeSubheading
