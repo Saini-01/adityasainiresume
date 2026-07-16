@@ -139,22 +139,22 @@
     \resumeItemListEnd{}
 
     \resumeSubheading
+      {Chip Design Member (SoCET STARS)}{June 2026 -- August 2026}
+      {SoCET, Purdue VIP}{West Lafayette, IN}
+      \resumeItemListStart
+        \resumeItem{Designed combinational and sequential logic (decoders, registers, synchronizers, FSMs) in SystemVerilog RTL and validated each block with self-checking testbenches}
+        \resumeItem{Progressed through the full digital ASIC design flow from RTL to GDSII with OpenLane, applying FPGA synthesis, timing analysis, and MMIO/driver/accelerator integration}
+        \resumeItem{Wrote RISC-V assembly for the AFTx07 ISA, simulated gate-level circuits in LTSPICE, and managed RTL builds with Linux, Makefiles, and Git on the asicfab server}
+    \resumeItemListEnd
+
+    \resumeSubheading
       {Robotic Safety Research Assistant}{January 2026 -- July 2026}
       {PurSec, Purdue Computer Science}{West Lafayette, IN}
       \resumeItemListStart
         \resumeItem{Researched jailbreak vulnerabilities in MLLM-controlled home-assistant robots, uncovering multi-step physics attacks that chain individually-safe actions into unsafe outcomes to defeat existing safety systems}
         \resumeItem{Engineered 10+ AI2-THOR multi-step physics attacks (chain-reaction, fire, and flooding hazards) that bypass state-of-the-art guardrails while every intermediate step passes inspection}
-        \resumeItem{Built a dual-brain safety baseline pairing RoboGuard (GPT-4o rules to Linear Temporal Logic compiled into Spot B\"uchi automata) with ASIMOV (GPT-4o Vision over frames + a Robot Constitution) to red-team its blind spots}
-        \resumeItem{Demonstrated attacks defeating both brains and ran reproducible evaluations via a Dockerized headless (Xvfb/FFmpeg) pipeline on AWS EC2 to quantify per-step and end-to-end failure rates}
+        \resumeItem{Reproduced a dual-brain safety baseline (RoboGuard: GPT-4o rules to Linear Temporal Logic in Spot B\"uchi automata; ASIMOV: GPT-4o Vision over frames + a Robot Constitution) and demonstrated attacks defeating both brains via a Dockerized headless pipeline on AWS EC2}
       \resumeItemListEnd
-
-    \resumeSubheading
-      {Advanced Mathematics Teacher}{June 2023 -- July 2025}
-      {Kumon North America}{Edison, NJ}
-      \resumeItemListStart
-        \resumeItem{Developed tailored pedagogical strategies to explain complex mathematical concepts to a diverse student body, ensuring mastery of core principles for over 20+ concurrent students.}
-        \resumeItem{Managed high-volume academic data entry and performance tracking, utilizing center-specific software to generate progress reports and identify learning bottlenecks for student development.}
-    \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
@@ -170,7 +170,6 @@
       \resumeItemListStart
         \resumeItem{Led the team to its best-ever season as Build President, bringing us to District Championships after 18+ years.}
         \resumeItem{Developed and led our team’s first instance of Swerve Drive, tuned PID/FF loops, and developed auto commands to increase accuracy by 66\% using custom vision pipelines to detect AprilTags for robot positioning.}
-        \resumeItem{Managed finances and administrative requirements for the team in conjunction with robot design requirements.}
       \resumeItemListEnd
       \resumeProjectHeading{\textbf{Tava} $|$ \emph{React Native, Expo, TypeScript, Firebase, Mapbox, OpenAI}}{September 2025}
       \resumeItemListStart
@@ -186,9 +185,10 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: C, C++, Python, Java, SQL, JavaScript, HTML/CSS, R} \\
+     \textbf{Languages}{: C, C++, SystemVerilog, Python, Java, SQL, JavaScript, HTML/CSS, R} \\
+     \textbf{Digital/Hardware}{: SystemVerilog RTL, Combinational \& Sequential Logic, FSMs, Testbenching/Verification, RISC-V (AFTx07), FPGA Synthesis \& Timing, RTL-to-GDSII (OpenLane), LTSPICE, ASIC Design Flow} \\
      \textbf{Embedded}{: RTOS, STM32, ESP32, SPI, I2C, UART, CAN, TCP/IP, Arduino, Linux} \\
-     \textbf{Developer Tools}{: Git, Docker, Amazon Web Services, Claude Code, Cursor, Agent Orchestration} \\
+     \textbf{Developer Tools}{: Git, Docker, Makefiles, AWS, Claude Code, Cursor, Agent Orchestration} \\
      \textbf{Libraries}{: pandas, NumPy, Matplotlib, React, Node.js, PyTorch, CUDA, OpenCV}
     }}
  \end{itemize}
