@@ -133,8 +133,8 @@
       {Purdue Electric Racing}{West Lafayette, IN}
       \resumeItemListStart
         \resumeItem{Developed modular RTOS-based vehicle firmware in C, integrating drivers and performing in-circuit debugging}
-        \resumeItem{Implemented runtime telemetry and data acquisition to validate performance bottlenecks in production firmware}
-        \resumeItem{Designed I2C and SPI HALs for STM32 platforms, standardizing high-frequency sensor communication}
+        \resumeItem{Implemented runtime telemetry and data acquisition to profile and validate performance bottlenecks in production firmware}
+        \resumeItem{Designed I2C and SPI HALs for STM32 platforms from component datasheets, building reusable infrastructure APIs for high-frequency sensor communication}
         \resumeItem{Developed Nextion LCD UART drivers and optimized command encoding for reliable real-time dashboard updates}
     \resumeItemListEnd{}
 
@@ -142,18 +142,17 @@
       {Chip Design Member (SoCET STARS)}{June 2026 -- August 2026}
       {SoCET, Purdue VIP}{West Lafayette, IN}
       \resumeItemListStart
-        \resumeItem{Designed combinational and sequential logic (decoders, registers, synchronizers, FSMs) in SystemVerilog RTL and validated each block with self-checking testbenches}
-        \resumeItem{Progressed through the full digital ASIC design flow from RTL to GDSII with OpenLane, applying FPGA synthesis, timing analysis, and MMIO/driver/accelerator integration}
-        \resumeItem{Wrote RISC-V assembly for the AFTx07 ISA, simulated gate-level circuits in LTSPICE, and managed RTL builds with Linux, Makefiles, and Git on the asicfab server}
+        \resumeItem{Developed memory-mapped I/O (MMIO) peripheral drivers and accelerator integration for a custom RISC-V SoC, deepening computer-architecture and peripheral fundamentals}
+        \resumeItem{Designed combinational and sequential logic (decoders, registers, FSMs) in SystemVerilog RTL and validated each block with self-checking testbenches through the RTL-to-GDSII flow}
+        \resumeItem{Wrote RISC-V assembly for the AFTx07 ISA, read schematics/datasheets, and managed builds with Embedded Linux, Makefiles, and Git on the asicfab server}
     \resumeItemListEnd
 
     \resumeSubheading
       {Robotic Safety Research Assistant}{January 2026 -- July 2026}
       {PurSec, Purdue Computer Science}{West Lafayette, IN}
       \resumeItemListStart
-        \resumeItem{Researched jailbreak vulnerabilities in MLLM-controlled home-assistant robots, uncovering multi-step physics attacks that chain individually-safe actions into unsafe outcomes to defeat existing safety systems}
-        \resumeItem{Engineered 10+ AI2-THOR multi-step physics attacks (chain-reaction, fire, and flooding hazards) that bypass state-of-the-art guardrails while every intermediate step passes inspection}
-        \resumeItem{Reproduced a dual-brain safety baseline (RoboGuard: GPT-4o rules to Linear Temporal Logic in Spot B\"uchi automata; ASIMOV: GPT-4o Vision over frames + a Robot Constitution) and demonstrated attacks defeating both brains via a Dockerized headless pipeline on AWS EC2}
+        \resumeItem{Researched jailbreak vulnerabilities in multimodal-LLM-controlled robots, uncovering multi-step attacks that chain individually-safe actions to defeat state-of-the-art safety systems}
+        \resumeItem{Built automated Python test and evaluation pipelines on headless Linux with Docker and AWS EC2, delivering reproducible regression runs and metrics across 10+ scenarios}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -171,9 +170,9 @@
         \resumeItem{Led the team to its best-ever season as Build President, bringing us to District Championships after 18+ years.}
         \resumeItem{Developed and led our team’s first instance of Swerve Drive, tuned PID/FF loops, and developed auto commands to increase accuracy by 66\% using custom vision pipelines to detect AprilTags for robot positioning.}
       \resumeItemListEnd
-      \resumeProjectHeading{\textbf{Tava} $|$ \emph{React Native, Expo, TypeScript, Firebase, Mapbox, OpenAI}}{September 2025}
+      \resumeProjectHeading{\textbf{Tree Generator} $|$ \emph{Rust, CLI, Data Structures}}{April 2026}
       \resumeItemListStart
-        \resumeItem{Built a cross-platform social app connecting student builders via an AI-powered search and Tinder-style swipe matching, with a node-edge network graph and interactive Mapbox map backed by Firebase auth and data.}
+        \resumeItem{Built a Rust CLI that generates configurable general and binary trees with visual printing and DFS traversals (preorder, inorder, postorder), applying ownership-safe data structures and recursion.}
       \resumeItemListEnd
     \resumeSubHeadingListEnd
 
@@ -185,11 +184,10 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: C, C++, SystemVerilog, Python, Java, SQL, JavaScript, HTML/CSS, R} \\
-     \textbf{Digital/Hardware}{: SystemVerilog RTL, Combinational \& Sequential Logic, FSMs, Testbenching/Verification, RISC-V (AFTx07), FPGA Synthesis \& Timing, RTL-to-GDSII (OpenLane), LTSPICE, ASIC Design Flow} \\
-     \textbf{Embedded}{: RTOS, STM32, ESP32, SPI, I2C, UART, CAN, TCP/IP, Arduino, Linux} \\
-     \textbf{Developer Tools}{: Git, Docker, Makefiles, AWS, Claude Code, Cursor, Agent Orchestration} \\
-     \textbf{Libraries}{: pandas, NumPy, Matplotlib, React, Node.js, PyTorch, CUDA, OpenCV}
+     \textbf{Languages}{: C, C++, Python, Rust, SystemVerilog, Java, SQL} \\
+     \textbf{Embedded \& Firmware}{: RTOS, bare-metal firmware, STM32, ESP32, device drivers, HALs, SPI, I2C, UART, CAN, in-circuit debugging, board bring-up} \\
+     \textbf{Systems \& Tools}{: Embedded Linux, Git, Makefiles, GDB, Docker, Unit/Integration testing, datasheets \& schematics} \\
+     \textbf{CS Foundations}{: Data Structures \& Algorithms, Object-Oriented Design, Computer Architecture, Operating Systems, Concurrency, Networking (TCP/IP)}
     }}
  \end{itemize}
 
