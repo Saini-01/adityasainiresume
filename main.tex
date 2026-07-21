@@ -133,7 +133,7 @@
       {Purdue Electric Racing}{West Lafayette, IN}
       \resumeItemListStart
         \resumeItem{Developed modular RTOS-based vehicle firmware in C, integrating drivers and performing in-circuit debugging}
-        \resumeItem{Implemented runtime telemetry and data acquisition to validate performance bottlenecks in production firmware}
+        \resumeItem{Implemented runtime telemetry and data acquisition to profile and validate performance bottlenecks in production firmware}
         \resumeItem{Designed I2C and SPI HALs for STM32 platforms, standardizing high-frequency sensor communication}
         \resumeItem{Developed Nextion LCD UART drivers and optimized command encoding for reliable real-time dashboard updates}
     \resumeItemListEnd{}
@@ -151,9 +151,9 @@
       {Robotic Safety Research Assistant}{January 2026 -- July 2026}
       {PurSec, Purdue Computer Science}{West Lafayette, IN}
       \resumeItemListStart
-        \resumeItem{Researched jailbreak vulnerabilities in MLLM-controlled home-assistant robots, uncovering multi-step physics attacks that chain individually-safe actions into unsafe outcomes to defeat existing safety systems}
-        \resumeItem{Engineered 10+ AI2-THOR multi-step physics attacks (chain-reaction, fire, and flooding hazards) that bypass state-of-the-art guardrails while every intermediate step passes inspection}
-        \resumeItem{Reproduced a dual-brain safety baseline (RoboGuard: GPT-4o rules to Linear Temporal Logic in Spot B\"uchi automata; ASIMOV: GPT-4o Vision over frames + a Robot Constitution) and demonstrated attacks defeating both brains via a Dockerized headless pipeline on AWS EC2}
+        \resumeItem{Researched jailbreak vulnerabilities in multimodal-LLM-controlled robots, uncovering multi-step attacks that chain individually-safe actions to defeat state-of-the-art safety models}
+        \resumeItem{Built containerized (Docker) Python pipelines running GPU-accelerated AI2-THOR simulation and model evaluation across 10+ scenarios on headless Linux cloud instances (AWS EC2), automating reproducible benchmarking at scale}
+        \resumeItem{Aggregated per-step model verdicts into structured metrics and visualized results with pandas/Matplotlib to analyze failure modes across the ML training, evaluation, and inference lifecycle}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -169,7 +169,7 @@
       \resumeProjectHeading{\textbf{FRC Team 2554} $|$ \emph{Java, OpenCV, Jetson Orin Nano, CUDA}}{September 2021 -- August 2025}
       \resumeItemListStart
         \resumeItem{Led the team to its best-ever season as Build President, bringing us to District Championships after 18+ years.}
-        \resumeItem{Developed and led our team’s first instance of Swerve Drive, tuned PID/FF loops, and developed auto commands to increase accuracy by 66\% using custom vision pipelines to detect AprilTags for robot positioning.}
+        \resumeItem{Built a CUDA-accelerated OpenCV vision pipeline on a Jetson Orin Nano to detect AprilTags in real time and tuned PID/FF control, improving autonomous positioning accuracy by 66\%.}
       \resumeItemListEnd
       \resumeProjectHeading{\textbf{Tava} $|$ \emph{React Native, Expo, TypeScript, Firebase, Mapbox, OpenAI}}{September 2025}
       \resumeItemListStart
@@ -185,11 +185,10 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: C, C++, SystemVerilog, Python, Java, SQL, JavaScript, HTML/CSS, R} \\
-     \textbf{Digital/Hardware}{: SystemVerilog RTL, Combinational \& Sequential Logic, FSMs, Testbenching/Verification, RISC-V (AFTx07), FPGA Synthesis \& Timing, RTL-to-GDSII (OpenLane), LTSPICE, ASIC Design Flow} \\
-     \textbf{Embedded}{: RTOS, STM32, ESP32, SPI, I2C, UART, CAN, TCP/IP, Arduino, Linux} \\
-     \textbf{Developer Tools}{: Git, Docker, Makefiles, AWS, Claude Code, Cursor, Agent Orchestration} \\
-     \textbf{Libraries}{: pandas, NumPy, Matplotlib, React, Node.js, PyTorch, CUDA, OpenCV}
+     \textbf{Languages}{: Python, C, C++, SystemVerilog, Java, SQL, JavaScript, HTML/CSS, R} \\
+     \textbf{ML \& GPU}{: PyTorch, CUDA, OpenCV, NumPy, pandas, Matplotlib, model training/evaluation/inference} \\
+     \textbf{Systems \& Tools}{: Linux, Git, Docker, containerization, AWS EC2 (GPU/HPC), Makefiles, RTOS, benchmarking} \\
+     \textbf{Embedded \& Hardware}{: STM32, ESP32, SPI, I2C, UART, CAN, TCP/IP, FPGA, SystemVerilog RTL, LTSPICE}
     }}
  \end{itemize}
 
