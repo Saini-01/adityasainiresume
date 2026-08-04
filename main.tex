@@ -120,7 +120,7 @@
     \resumeSubheading
       {Purdue University}{West Lafayette, IN}
       {B.S. Computer Science (Systems Programming)}{Graduation: May 2028 (Expected)}
-    \item{\small Relevant Coursework: Data Structures \& Algorithms, Linear Algebra, Discrete Mathematics, Computer Architecture, Programming in C, Object-Oriented Programming, Multivariate Calculus}
+    \item{\small Relevant Coursework: Data Structures \& Algorithms, Computer Architecture, Programming in C, Object-Oriented Programming, Discrete Mathematics, Linear Algebra, Multivariate Calculus}
   \resumeSubHeadingListEnd
 
 
@@ -132,27 +132,27 @@
       {Embedded Engineer}{Sep. 2025 -- Present}
       {Purdue Electric Racing}{West Lafayette, IN}
       \resumeItemListStart
-        \resumeItem{Designed, developed, tested, and debugged modular RTOS-based vehicle firmware in C, integrating drivers with hardware via in-circuit debugging}
-        \resumeItem{Implemented runtime telemetry and data acquisition to profile and validate performance bottlenecks in production firmware}
-        \resumeItem{Designed I2C and SPI HALs for STM32 platforms from component datasheets, building reusable infrastructure APIs for high-frequency sensor communication}
-        \resumeItem{Developed Nextion LCD UART drivers and optimized command encoding for reliable real-time dashboard updates}
+        \resumeItem{Designed, developed, and deployed production C software for a real-world electric race car, writing modular RTOS firmware with unit-tested drivers and in-circuit debugging}
+        \resumeItem{Built runtime telemetry and data acquisition to profile performance bottlenecks and improve reliability under changing race-day requirements}
+        \resumeItem{Owned I2C/SPI HAL infrastructure APIs used by the team for high-frequency sensor communication, collaborating across software and electrical engineers}
+        \resumeItem{Developed UART drivers and optimized command encoding for a real-time dashboard, debugging firmware/hardware interactions end-to-end}
     \resumeItemListEnd{}
 
     \resumeSubheading
       {Chip Design Member (SoCET STARS)}{June 2026 -- August 2026}
       {SoCET, Purdue VIP}{West Lafayette, IN}
       \resumeItemListStart
-        \resumeItem{Developed memory-mapped I/O (MMIO) peripheral drivers and accelerator integration for a custom RISC-V SoC, deepening computer-architecture and peripheral fundamentals}
-        \resumeItem{Designed combinational and sequential logic (decoders, registers, FSMs) in SystemVerilog RTL and validated each block with self-checking testbenches through the RTL-to-GDSII flow}
-        \resumeItem{Wrote RISC-V assembly for the AFTx07 ISA, read schematics/datasheets, and managed builds with Embedded Linux, Makefiles, and Git on the asicfab server}
+        \resumeItem{Applied computer architecture fundamentals by implementing MMIO peripheral drivers and accelerator integration for a custom RISC-V SoC}
+        \resumeItem{Designed sequential/combinational logic in SystemVerilog and wrote self-checking unit testbenches, validating each block through the RTL-to-GDSII flow}
+        \resumeItem{Wrote RISC-V assembly for the AFTx07 ISA and managed Linux builds with Makefiles and Git in a collaborative, requirements-driven design environment}
     \resumeItemListEnd
 
     \resumeSubheading
       {Robotic Safety Research Assistant}{January 2026 -- July 2026}
       {PurSec, Purdue Computer Science}{West Lafayette, IN}
       \resumeItemListStart
-        \resumeItem{Researched jailbreak vulnerabilities in multimodal-LLM-controlled robots, uncovering multi-step attacks that chain individually-safe actions to defeat state-of-the-art safety systems}
-        \resumeItem{Built automated Python test and evaluation pipelines on headless Linux with Docker and AWS EC2, delivering reproducible regression runs and metrics across 10+ scenarios}
+        \resumeItem{Researched jailbreak vulnerabilities in multimodal-LLM-controlled robots, independently scoping multi-step attack scenarios against state-of-the-art safety systems}
+        \resumeItem{Built automated Python test pipelines on headless Linux with Docker and AWS EC2, running reproducible regression evaluations and metrics across 10+ scenarios}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -161,18 +161,18 @@
 %-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
-      \resumeProjectHeading{\textbf{Natural Language Shell} $|$ \emph{C, Python, OpenAI API, Git}}{June 2025 -- January 2026}
-      \resumeItemListStart
-        \resumeItem{Created a lightweight command-line shell in C supporting natural language commands with tokenizer, intent parsing, and bash mapping; integrated OpenAI API for complex commands/queries through OpenRouter.}
-      \resumeItemListEnd
       \resumeProjectHeading{\textbf{FRC Team 2554} $|$ \emph{Java, OpenCV, Jetson Orin Nano, CUDA}}{September 2021 -- August 2025}
       \resumeItemListStart
-        \resumeItem{Led the team to its best-ever season as Build President, bringing us to District Championships after 18+ years.}
-        \resumeItem{Developed and led our team’s first instance of Swerve Drive, tuned PID/FF loops, and developed auto commands to increase accuracy by 66\% using custom vision pipelines to detect AprilTags for robot positioning.}
+        \resumeItem{Led 40+ students as Build President through a dynamic competition season, coordinating software, mechanical, and electrical teams to reach District Championships after 18+ years.}
+        \resumeItem{Developed and deployed the team's first Swerve Drive software stack, tuning PID/FF control and vision pipelines to improve autonomous positioning accuracy by 66\% on a real competition robot.}
       \resumeItemListEnd
-      \resumeProjectHeading{\textbf{Tree Generator} $|$ \emph{Rust, CLI, Data Structures}}{April 2026}
+      \resumeProjectHeading{\textbf{Natural Language Shell} $|$ \emph{C, Python, OpenAI API, Git}}{June 2025 -- January 2026}
       \resumeItemListStart
-        \resumeItem{Built a Rust CLI that generates configurable general and binary trees with visual printing and DFS traversals (preorder, inorder, postorder), applying ownership-safe data structures and recursion.}
+        \resumeItem{Built a C command-line shell with tokenizer, intent parsing, and bash mapping; integrated Python/OpenAI for complex queries, applying data structures and debugging across the full stack.}
+      \resumeItemListEnd
+      \resumeProjectHeading{\textbf{Tava} $|$ \emph{React Native, TypeScript, JavaScript, Firebase}}{September 2025}
+      \resumeItemListStart
+        \resumeItem{Shipped a cross-platform app connecting student builders via AI-powered search and swipe matching, with Firebase auth/data and interactive network visualization.}
       \resumeItemListEnd
     \resumeSubHeadingListEnd
 
@@ -184,10 +184,10 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: C, C++, Assembly, Python, Rust, SystemVerilog, Java, SQL} \\
-     \textbf{Embedded \& Firmware}{: RTOS, bare-metal firmware, STM32, ESP32, device drivers, HALs, SPI, I2C, UART, CAN, in-circuit debugging, board bring-up} \\
-     \textbf{Systems \& Tools}{: Embedded Linux, Git, Makefiles, GDB, Docker, Unit/Integration testing, datasheets \& schematics} \\
-     \textbf{CS Foundations}{: Data Structures \& Algorithms, Object-Oriented Design, Computer Architecture, Operating Systems, Concurrency, Networking (TCP/IP)}
+     \textbf{Languages}{: C, C++, Python, Java, JavaScript, TypeScript, Rust, SQL, SystemVerilog} \\
+     \textbf{Systems}{: Computer Architecture, Networking (TCP/IP), Operating Systems, Concurrency, RTOS, Embedded Linux, performance optimization} \\
+     \textbf{Tools}{: Git, Docker, Linux, Makefiles, GDB, AWS EC2, unit/integration testing, debugging, CI-style regression pipelines} \\
+     \textbf{Hardware-Adjacent}{: STM32, SPI, I2C, UART, CAN, device drivers, HALs, in-circuit debugging}
     }}
  \end{itemize}
 
