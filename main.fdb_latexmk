@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1784663920.95798 "/Users/adityasaini/Desktop/resume/adityasainiresume/main.tex" "main.pdf" "main" 1784663921.47655 0
-  "/Users/adityasaini/Desktop/resume/adityasainiresume/main.tex" 1784663921.1627 8364 d7a2ef9879277192be7d71b5ca8dec74 ""
+["pdflatex"] 1787079913.20702 "/Users/adityasaini/Desktop/resume/adityasainiresume/main.tex" "main.pdf" "main" 1787079913.74468 0
+  "/Users/adityasaini/Desktop/resume/adityasainiresume/main.tex" 1787079913.03724 10325 c0448b53e416e629a39a967762c4428f ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -85,9 +85,9 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1752933402 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "main.aux" 1784663921.42985 711 d776b8cadf0903cda9f4356d8076bd81 "pdflatex"
-  "main.out" 1784663921.43053 390 8178769a591dae54593be5dc5893bd68 "pdflatex"
-  "main.tex" 1784663921.1627 8364 d7a2ef9879277192be7d71b5ca8dec74 ""
+  "main.aux" 1787079913.69412 711 c9ff240f2773ae263883ee9673759b74 "pdflatex"
+  "main.out" 1787079913.69466 390 8178769a591dae54593be5dc5893bd68 "pdflatex"
+  "main.tex" 1787079913.03724 10325 c0448b53e416e629a39a967762c4428f ""
   (generated)
   "main.aux"
   "main.log"
