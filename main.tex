@@ -37,7 +37,7 @@
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
 \addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\textheight}{1.2in}
 
 \urlstyle{same}
 
@@ -114,7 +114,7 @@
     \resumeSubheading
       {Purdue University}{West Lafayette, IN}
       {B.S. Computer Science (Systems Programming)}{Expected Graduation: May 2028}
-    \item{\small Relevant Coursework: Linear Algebra, Multivariate Calculus, Data Structures \& Algorithms, Discrete Mathematics, Computer Architecture, Programming in C, Object-Oriented Programming}
+    \item{\small Relevant Coursework: Computer Architecture, Programming in C, Data Structures \& Algorithms, Object-Oriented Programming, Discrete Mathematics, Linear Algebra, Multivariate Calculus}
   \resumeSubHeadingListEnd
 
 
@@ -158,45 +158,29 @@
 %-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
-    \resumeProjectHeading{\textbf{Memory Copier} $|$ \emph{SystemVerilog, RTL Design, Verification}}{July 2026}
-    \resumeItemListStart
-      \resumeItem{Designed a byte-addressed memory copy controller (simple DMA) as a five-state Moore FSM that reads from a source address and writes to a destination address when a start signal goes high}
-      \resumeItem{Split combinational next-state and output logic from a clocked state register with asynchronous reset, and buffered read data in a register so it held stable across the read-to-write cycle}
-      \resumeItem{Verified copy correctness, memory handshake timing, and reset behavior with a SystemVerilog testbench}
-    \resumeItemListEnd
-      \resumeProjectHeading{\textbf{Aptum} $|$ \emph{TypeScript, Next.js, React, Supabase, OpenAI, KaTeX}}{July 2026 -- Present}
+      \resumeProjectHeading{\textbf{Memory Copier} $|$ \emph{SystemVerilog, RTL Design, Verification}}{July 2026}
       \resumeItemListStart
-        \resumeItem{Built an on-demand learning platform that generates a full course on any topic from a learner profile, with structured modules, long-form LaTeX notes, and MCQ practice flashcards per chapter}
-        \resumeItem{Generated syllabi with OpenAI structured JSON schemas scaled to depth and duration, then bulk-wrote LaTeX notes and quizzes for every chapter so the entire course is ready up front}
-        \resumeItem{Cached identical syllabi by SHA-256 profile hash, stored per-user courses in Supabase with RLS, and repaired JSON-corrupted LaTeX so chapter notes render math cleanly with KaTeX}
+        \resumeItem{Designed a byte-addressed memory copy controller (simple DMA) as a five-state Moore FSM that reads from a source address and writes to a destination address when a start signal goes high}
+        \resumeItem{Split combinational next-state and output logic from a clocked state register with asynchronous reset, and buffered read data in a register so it held stable across the read-to-write cycle}
+        \resumeItem{Verified copy correctness, memory handshake timing, and reset behavior with a SystemVerilog testbench}
       \resumeItemListEnd
-      \resumeProjectHeading{\textbf{gcstats} $|$ \emph{Python, SQLite, HTML}}{August 2026 -- Present}
+      \resumeProjectHeading{\textbf{Natural Language Shell} $|$ \emph{C, POSIX, Python, Bash}}{June -- August 2025 }
       \resumeItemListStart
-        \resumeItem{Built a local CLI that snapshots chat.db, decodes iMessage bodies, and nets out removed tapbacks using stdlib}
-        \resumeItem{Shipped an HTML dashboard of per-capita reaction rates, leaderboards, and who-reacts-to-who tapback matrices}
-      \resumeItemListEnd
-      \resumeProjectHeading{\textbf{Tava} $|$ \emph{Python, TypeScript, OpenAI, Firebase, React Native}}{September 2025}
-      \resumeItemListStart
-        \resumeItem{Built AI-powered search and swipe-based matching to recommend collaborators for student project ideas, ranking candidates by shared interests via LLM-assisted retrieval. Includes an interactive, visual node-edge graph for direct and secondary connections.}
-      \resumeItemListEnd
-      \resumeProjectHeading{\textbf{Natural Language Shell} $|$ \emph{C, POSIX, Python, Bash, OpenRouter, OpenAI API}}{June 2025 -- January 2026}
-      \resumeItemListStart
-        \resumeItem{Built NLSH, a custom Unix shell in C with process management, tokenization, and built-ins (cd, help, exit)}
-        \resumeItem{Added natural-language command translation via Python: phrase mappings for common queries, LLM fallback through OpenRouter/DeepSeek when no match exists}
-        \resumeItem{Bridged C and Python with popen, OS-aware prompts, and a Bash installer that puts the shell on PATH}
+        \resumeItem{Built NLSH, a custom Unix shell in C with process management, input tokenization, and shell built-ins (cd, help, exit), handling the full read-parse-execute loop rather than wrapping an existing shell}
+        \resumeItem{Bridged the C core to a Python helper over popen for command translation, added OS-aware prompt context, and shipped a Bash installer that puts the shell on PATH}
       \resumeItemListEnd
     \resumeSubHeadingListEnd
 
 
 %-----------PROGRAMMING SKILLS-----------
-\vspace{-4pt}
+\vspace{-8pt}
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-      \textbf{Languages}{: Python, C, C++, Java, SQL, TypeScript, JavaScript, SystemVerilog, Verilog, RISC-V assembly} \\
-      \textbf{Libraries/APIs}{: OpenAI API, OpenCV, Firebase, Expo, React Native, Mapbox} \\
-      \textbf{Tools}{: Git/GitHub, Linux, CUDA, Docker, AWS EC2, Makefiles, GCC, Cursor, Claude Code} \\
-      \textbf{Hardware/EDA}{: Jetson Orin Nano, STM32, STM32CubeIDE, Cadence Genus, Cadence Innovus, OpenLane, LTspice, FPGA synthesis \& timing, RTL verification}
+      \textbf{Languages}{: C, C++, SystemVerilog, Verilog, RISC-V assembly, Python, Java, SQL, Bash} \\
+      \textbf{Systems}{: Linux, POSIX, process management, embedded C, ring buffers, RTOS, Docker, Makefiles, GCC, GDB} \\
+      \textbf{Embedded/Hardware}{: STM32 (Cortex-M4), STM32CubeIDE, PSoC, Jetson Orin Nano, UART, CAN, SPI, I2C} \\
+      \textbf{EDA/Tools}{: Cadence Genus/Innovus, OpenLane, LTspice, FPGA synthesis/timing, RTL verification, CUDA, Git}
     }}
  \end{itemize}
 
