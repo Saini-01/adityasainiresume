@@ -127,7 +127,6 @@
       {PurSec, Purdue Computer Science}{West Lafayette, IN}
       \resumeItemListStart
         \resumeItem{Researched safety of multimodal LLMs controlling embodied agents, formulating attack methods to create physical harm from benign individual steps for over 20 individual attacks spanning 8 different physical attack categories}
-        \resumeItem{Created a dual-brain verification method to measure defensive success, consisting of RoboGuard LTL verification and the ASIMOV constitution checks running on GPT-4o to allow for quicker verifications for each attack}
         \resumeItem{Built a closed-loop harness through a state machine in Python that returns updated scene state and full action history to the verifier after every robot step, gating each proposed action on both safety brains before execution}
         \resumeItem{Built the Python simulation/eval pipeline using AI2-THOR rendering, Pillow + FFmpeg video output, and a Dockerized Ubuntu 22.04 + Xvfb headless harness for reproducible runs on machines with or without displays}
     \resumeItemListEnd
@@ -147,7 +146,6 @@
       \resumeItemListStart
         \resumeItem{Led 60+ students as Build President to District Championships after 18 years, earning 3 regional awards.}
         \resumeItem{Built a CUDA-accelerated OpenCV vision pipeline in Python for AprilTag detection, improving autonomous positioning accuracy by 66\%, leading to a larger scoring volume with greater scoring efficiency.}
-        \resumeItem{Fabricated a custom 30-button robot controller using a PSoC microcontroller, writing custom embedded C firmware for continuous input polling to ensure reliable driver input under competition conditions}
         \resumeItem{Diagnosed and resolved cross-system hardware failures across CAN bus-chained motor controllers and sensors}
         \resumeItem{Designed robot subsystems in Onshape through successive prototyping cycles, including the intake and drivetrain}
     \resumeItemListEnd
@@ -163,6 +161,11 @@
         \resumeItem{Designed a byte-addressed memory copy controller (simple DMA) as a five-state Moore FSM that reads from a source address and writes to a destination address when a start signal goes high}
         \resumeItem{Split combinational next-state and output logic from a clocked state register with asynchronous reset, and buffered read data in a register so it held stable across the read-to-write cycle}
         \resumeItem{Verified copy correctness, memory handshake timing, and reset behavior with a SystemVerilog testbench}
+      \resumeItemListEnd
+      \resumeProjectHeading{\textbf{Custom 30-Button Gamepad} $|$ \emph{Embedded C, PSoC, USB}}{January -- April 2025}
+      \resumeItemListStart
+        \resumeItem{Fabricated a custom 30-button gamepad on a PSoC microcontroller, writing embedded C firmware and a USB polling loop so the FRC Driver Station read it as a standard game controller and relayed inputs to the robot}
+        \resumeItem{Improved driver control efficiency by 50\% by giving every robot function its own dedicated button}
       \resumeItemListEnd
       \resumeProjectHeading{\textbf{Natural Language Shell} $|$ \emph{C, POSIX, Python, Bash}}{June -- August 2025 }
       \resumeItemListStart
