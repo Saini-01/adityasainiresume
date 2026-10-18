@@ -132,12 +132,15 @@
     \resumeItemListEnd
 
     \resumeSubheading
-      {Robotic Safety Research Assistant}{January 2026 -- Present}
-      {PurSec, Purdue Computer Science}{West Lafayette, IN}
+      {Digital Design Engineer}{July 2026 -- Present}
+      {SoCET VIP, Purdue Electrical \& Computer Engineering}{West Lafayette, IN}
       \resumeItemListStart
-        \resumeItem{Researched safety of multimodal LLMs controlling embodied agents, formulating attack methods to create physical harm from benign individual steps for over 20 individual attacks spanning 8 different physical attack categories}
-        \resumeItem{Built a closed-loop harness through a state machine in Python that returns updated scene state and full action history to the verifier after every robot step, gating each proposed action on both safety brains before execution}
-        \resumeItem{Built the Python simulation/eval pipeline using AI2-THOR rendering, Pillow + FFmpeg video output, and a Dockerized Ubuntu 22.04 + Xvfb headless harness for reproducible runs on AWS EC2 servers.}
+        \resumeItem{Designed a byte-addressed memory copy controller (simple DMA) in SystemVerilog as a five-state Moore FSM that reads from a source address and writes to a destination address when a start signal goes high}
+        \resumeItem{Split combinational next-state and output logic from a clocked state register with asynchronous reset, buffering read data in a register so it held stable across the read-to-write cycle}
+        \resumeItem{Verified copy correctness, memory handshake timing, and reset behavior with a SystemVerilog testbench}
+        \resumeItem{Developing a Space Invaders game on an FPGA in SystemVerilog (in progress), building modular synchronous RTL for real-time graphics rendering and game mechanics with simulation and FPGA validation}
+        \resumeItem{Designed a VGA timing controller for 640$\times$480 at 60 Hz from a 25 MHz pixel clock, using parameterized 10-bit horizontal and vertical counters to generate active-low HSYNC/VSYNC pulses and detect the visible area}
+        \resumeItem{Timed each frame across 800 clock cycles per line and 525 lines including blanking intervals, generating pixel coordinates and a frame-tick signal on vertical blanking to sync game-state updates with display refresh}
     \resumeItemListEnd
 
     \resumeSubheading
@@ -156,12 +159,6 @@
 %-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
-      \resumeProjectHeading{\textbf{Memory Copier} $|$ \emph{SystemVerilog, RTL Design, Verification}}{July 2026}
-      \resumeItemListStart
-        \resumeItem{Designed a byte-addressed memory copy controller (simple DMA) as a five-state Moore FSM that reads from a source address and writes to a destination address when a start signal goes high}
-        \resumeItem{Split combinational next-state and output logic from a clocked state register with asynchronous reset, and buffered read data in a register so it held stable across the read-to-write cycle}
-        \resumeItem{Verified copy correctness, memory handshake timing, and reset behavior with a SystemVerilog testbench}
-      \resumeItemListEnd
       \resumeProjectHeading{\textbf{Custom 30-Button Gamepad} $|$ \emph{Embedded C, PSoC, USB}}{January -- April 2025}
       \resumeItemListStart
         \resumeItem{Fabricated a custom 30-button gamepad on a PSoC microcontroller, writing embedded C firmware and a USB polling loop so the FRC Driver Station read it as a standard game controller and relayed inputs to the robot}
