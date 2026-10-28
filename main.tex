@@ -113,7 +113,7 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Purdue University}{West Lafayette, IN}
-      {B.S. Computer Science (Systems Programming)}{Expected Graduation: May 2029}
+      {B.S. Computer Science (Systems Programming)}{Expected Graduation: December 2028}
     \item{\small Relevant Coursework: Computer Architecture, Programming in C, Data Structures \& Algorithms, Object-Oriented Programming, Discrete Mathematics, Linear Algebra, Multivariate Calculus}
   \resumeSubHeadingListEnd
 
@@ -121,7 +121,12 @@
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
-
+    \resumeSubheading
+      {Software Engineer Intern}{Jan. 2027 -- Aug. 2027}
+      {RTX: Collins Aerospace}{Cedar Rapids, IA}
+      \resumeItemListStart
+        \resumeItem{Incoming Software Engineer Intern at Collins Aerospace on the Avionics Software Tools team.}
+      \resumeItemListEnd
     \resumeSubheading
       {Embedded Engineer}{Sep. 2025 -- Present}
       {Purdue Electric Racing}{West Lafayette, IN}
@@ -140,37 +145,28 @@
         \resumeItem{Built the Python simulation/eval pipeline using AI2-THOR rendering, Pillow + FFmpeg video output, and a Dockerized Ubuntu 22.04 + Xvfb headless harness for reproducible runs on AWS EC2 servers.}
     \resumeItemListEnd
 
-    \resumeSubheading
-      {Build President \& Programming Captain}{September 2021 -- August 2025}
-      {FRC Team 2554 - The Warhawks}{Edison, NJ}
-      \resumeItemListStart
-        \resumeItem{Led 60+ students as Build President to District Championships after 18 years, earning 3 regional awards.}
-        \resumeItem{Built a CUDA-accelerated OpenCV vision pipeline in Python for AprilTag detection, improving autonomous positioning accuracy by 66\%, leading to a larger scoring volume with greater scoring efficiency.}
-        \resumeItem{Diagnosed and resolved cross-system hardware failures across CAN bus-chained motor controllers and sensors}
-        \resumeItem{Designed robot subsystems in Onshape through successive prototyping cycles, including the intake and drivetrain}
-    \resumeItemListEnd
-
   \resumeSubHeadingListEnd
 
 
 %-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
-      \resumeProjectHeading{\textbf{Memory Copier} $|$ \emph{SystemVerilog, RTL Design, Verification}}{July 2026}
+      \resumeProjectHeading{\textbf{Natural Language Shell} $|$ \emph{C, POSIX, Python, Bash}}{June -- August 2025}
       \resumeItemListStart
-        \resumeItem{Designed a byte-addressed memory copy controller (simple DMA) as a five-state Moore FSM that reads from a source address and writes to a destination address when a start signal goes high}
-        \resumeItem{Split combinational next-state and output logic from a clocked state register with asynchronous reset, and buffered read data in a register so it held stable across the read-to-write cycle}
-        \resumeItem{Verified copy correctness, memory handshake timing, and reset behavior with a SystemVerilog testbench}
+        \resumeItem{Built NLSH, a custom Unix shell in C with process management, input tokenization, and shell built-ins (cd, help, exit), handling the full read-parse-execute loop rather than wrapping an existing shell}
+        \resumeItem{Bridged the C core to a Python helper over popen for command translation, added OS-aware prompt context, and shipped a Bash installer that puts the shell on PATH}
+      \resumeItemListEnd
+      \resumeProjectHeading{\textbf{FRC 2554: Build President \& Programming Captain} $|$ \emph{Python, OpenCV, CUDA}}{Sep. 2021 -- Aug. 2025}
+      \resumeItemListStart
+        \resumeItem{Led 60+ students as Build President to District Championships after 18 years, earning 3 regional awards.}
+        \resumeItem{Built a CUDA-accelerated OpenCV vision pipeline in Python for AprilTag detection, improving autonomous positioning accuracy by 66\%, leading to a larger scoring volume with greater scoring efficiency.}
+        \resumeItem{Diagnosed and resolved cross-system hardware failures across CAN bus-chained motor controllers and sensors}
+        \resumeItem{Designed robot subsystems in Onshape through successive prototyping cycles, including the intake and drivetrain}
       \resumeItemListEnd
       \resumeProjectHeading{\textbf{Custom 30-Button Gamepad} $|$ \emph{Embedded C, PSoC, USB}}{January -- April 2025}
       \resumeItemListStart
         \resumeItem{Fabricated a custom 30-button gamepad on a PSoC microcontroller, writing embedded C firmware and a USB polling loop so the FRC Driver Station read it as a standard game controller and relayed inputs to the robot}
         \resumeItem{Improved driver control efficiency by 50\% by giving every robot function its own dedicated button}
-      \resumeItemListEnd
-      \resumeProjectHeading{\textbf{Natural Language Shell} $|$ \emph{C, POSIX, Python, Bash}}{June -- August 2025 }
-      \resumeItemListStart
-        \resumeItem{Built NLSH, a custom Unix shell in C with process management, input tokenization, and shell built-ins (cd, help, exit), handling the full read-parse-execute loop rather than wrapping an existing shell}
-        \resumeItem{Bridged the C core to a Python helper over popen for command translation, added OS-aware prompt context, and shipped a Bash installer that puts the shell on PATH}
       \resumeItemListEnd
     \resumeSubHeadingListEnd
 
